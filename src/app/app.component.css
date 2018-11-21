@@ -1,0 +1,149 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+.print-todos {
+  padding-top: 40px;
+  max-width: 70%;
+  padding-left: 0;
+  margin: auto;
+  /* pos ition: relative; */
+}
+
+.print-todos li {
+  border: 1px solid grey;
+  border-top: none;
+  list-style: none;
+  padding: 6px 0;
+  font-weight: bold;
+  /* position: absolute; */
+}
+
+.heading {
+  background: silver;
+  border: 1px solid !important;
+}
+
+.heading span {
+  /* padding: 6px 0; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.print-todos .heading span:first-child {
+  display: inline-block;
+  width: 50%;
+  border-right: 1px solid;
+  
+}
+
+.print-todos .heading span:nth-child(2) {
+  display: inline-block;
+  width: 20%;
+  border-right: 1px solid;
+}
+
+.print-todos .heading span:last-child {
+  display: inline-block;
+  width: 29%;
+}
+
+.print-todos li span {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.todo-desc {
+  display: inline-block;
+  width: 50%;
+  /* border-right: 1px solid; */
+}
+
+.todo-staus {
+  display: inline-block;
+  width: 19%;
+}
+
+.todo-update-delete {
+  display: inline-block;
+  width: 29%;
+  /* border-left: 1px solid; */
+}
+
+.todo-staus span {
+  border: 1px solid;
+  margin: 0 5px;
+}
+
+.todo-update-delete span {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/*  */
+
+li.task-done {
+  background: #35CE8D;
+  color: whitesmoke;
+}
+
+span.task-done {
+  text-decoration-line: line-through;
+}
+task-txtbox{
+  text-align: center;  
+}
+
+/* responsive code */
+/* 992px */
+@media screen and (max-width:992px){
+  .print-todos{
+    max-width: 85%;
+  }
+}
+
+/* 768px */
+@media screen and (max-width:768px){
+  .print-todos .heading span:first-child, .todo-desc{
+    width: 45%;
+    font-size: 13px;
+  }
+  .print-todos .heading span:nth-child(2), .todo-staus{
+    width: 22%;
+    font-size: 13px;
+  }
+  .print-todos.heading span:nth-child(3), .todo-update-delete{
+    width: 26%;
+    font-size: 13px;
+  }
+  
+}
+
+/* 640px */
+@media screen and (max-width:640px){
+  .print-todos{
+    max-width: 100%;
+  }
+}
+
+/* 480px */
+@media screen and (max-width:480px){
+  .print-todos .heading span:first-child, .todo-desc{
+    width: 40%;
+  }
+  .print-todos .heading span:nth-child(2), .todo-staus{
+    width: 25%;
+  }
+  .print-todos.heading span:nth-child(3), .todo-update-delete{
+    width: 32%;
+  }
+}
